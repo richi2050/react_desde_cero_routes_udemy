@@ -1,7 +1,8 @@
-import {Route, Link, BrowserRouter as Router, Switch, NavLink} from 'react-router-dom'
+import {Route, BrowserRouter as Router, Switch, NavLink} from 'react-router-dom'
 import Contacto from './components/Contacto'
 import Inicio from './components/Inicio'
 import Nosotros from './components/Nosotros'
+import User from './components/User'
 
 
 
@@ -26,6 +27,10 @@ function App() {
           <Route path='/' exact>
             <Inicio></Inicio>
           </Route>
+          <Route path='/nosotros/:id' exact>
+            <User></User>
+          </Route>
+
           <Route path='/contacto'>
             <Contacto></Contacto>
           </Route>
